@@ -1,0 +1,28 @@
+﻿<Window x:Class="ICTPRG403_ICTPRG404_ICTPRG410.Edit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ICTPRG403_ICTPRG404_ICTPRG410"
+        mc:Ignorable="d"
+        Title="ICTPRG403_ICTPRG404_ICTPRG410" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        >
+    <Grid>
+        
+        <Label Content="Edit Person" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Margin="330,26,265,0" Width="197" />
+        <TextBox Name="txtbox_FirstName" HorizontalAlignment="Left" Height="36" Margin="205,127,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="437" FontSize="18" />
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="105,127,0,0" VerticalAlignment="Top" Height="36" Width="95" FontSize="18"/>
+        <TextBox x:Name="txtbox_LastName" HorizontalAlignment="Left" Height="36" Margin="205,168,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="437" FontSize="18"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="105,168,0,0" VerticalAlignment="Top" Height="36" Width="95" FontSize="18"/>
+        <TextBox x:Name="txtbox_Height" HorizontalAlignment="Left" Height="36" Margin="205,209,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="437" FontSize="18"/>
+        <Label Content="Height (ft)" HorizontalAlignment="Left" Margin="105,209,0,0" VerticalAlignment="Top" Height="36" Width="95" FontSize="18"/>
+        <Label Content="Weight (kg)" HorizontalAlignment="Left" Margin="96,250,0,0" VerticalAlignment="Top" Height="36" Width="104" FontSize="18"/>
+        <TextBox x:Name="txtbox_Weight" HorizontalAlignment="Left" Height="36" Margin="205,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="437" FontSize="18"/>
+        <Button Name="Btn_SaveInput" Content="Save"  VerticalAlignment="Bottom" Height="61" Margin="205,0,138,47" FontSize="17.5" Click="Btn_SaveInput_Click"/>
+        <Label Content="Id" HorizontalAlignment="Left" Margin="179,91,0,0" VerticalAlignment="Top" Height="36" Width="26" FontSize="18" RenderTransformOrigin="0.731,0.806"/>
+        <TextBox x:Name="txtbox_Id" HorizontalAlignment="Left" Height="26" Margin="205,96,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="227" FontSize="18" BorderThickness="0" IsReadOnly="True"/>
+        <Button x:Name="Btn_GoBack" Content="&lt;--" Grid.Row="0"   HorizontalAlignment="Left"  Padding="10" MinWidth="100" VerticalAlignment="Top" Click="Btn_GoBack_Click" Width="80" FontSize="20" Height="48"/>
+
+    </Grid>
+</Window>

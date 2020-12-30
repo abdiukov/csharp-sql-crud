@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UnitTestProject_</name>
+    </assembly>
+    <members>
+        <member name="T:UnitTestProject_.UnitTest1">
+            <summary>
+            UnitTest1 is used to check that the database is capable of inserting, updating and deleting.
+            </summary>
+        </member>
+        <member name="M:UnitTestProject_.UnitTest1.Init">
+            <summary>
+            Init() is used to link the test to the database.
+            In order to execute this, a connection string was created in App.Config for UnitTest project.
+            </summary>
+        </member>
+        <member name="M:UnitTestProject_.UnitTest1.Test2B">
+            <summary>
+            The test below should be performed after the query 'EXEC RESET_DB' has been run in SSMS.
+            Or in other words, after the database has been reset.
+            Test2B checks that the amount of persons entered into the database equals to 4 and it checks that the GetPeople() method is operational.
+            </summary>
+        </member>
+        <member name="M:UnitTestProject_.UnitTest1.Test3B">
+            <summary>
+            Test3B checks that a person can be inserted into the DataBase
+            It checks that upon executing the command InsertPerson, 1 row has been affected.
+            </summary>
+        </member>
+        <member name="M:UnitTestProject_.UnitTest1.Test4B">
+            <summary>
+            Test 4B checks the UpdatePerson() method.
+            It checks that upon executing the command UpdatePerson, 1 row has been affected.
+            </summary>
+        </member>
+        <member name="M:UnitTestProject_.UnitTest1.Test5B">
+            <summary>
+            Test 5B checks the DeletePerson() method.
+            It checks that upon executing the command DeletePerson, 1 row has been affected.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,52 @@
+﻿<Window x:Class="ICTPRG403_ICTPRG404_ICTPRG410.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ICTPRG403_ICTPRG404_ICTPRG410"
+        mc:Ignorable="d"
+        Title="ICTPRG403_ICTPRG404_ICTPRG410" Height="450" Width="800"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        >
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="299*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Frame x:Name="frame" Content="Frame" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" NavigationUIVisibility="Hidden" BorderBrush="LightSkyBlue" Margin="10,10,602,760" Padding="10" BorderThickness="1"/>
+        <Button x:Name="BtnAdd" Content="Add Person" Grid.Column="1" Grid.Row="0"   HorizontalAlignment="Right"  Padding="10" MinWidth="100" Margin="0,10,10,0" Click="BtnAdd_Click" Width="120"/>
+
+        <DataGrid Name ="dgPeople" HorizontalAlignment="Left" Height="341" Margin="0,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="794" Grid.ColumnSpan="2" IsReadOnly="True" AutoGenerateColumns="False" FontSize="20" FontFamily="Verdana">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Path='Id'}"/>
+                <DataGridTextColumn Header="First Name" Binding="{Binding Path='FirstName'}"/>
+                <DataGridTextColumn Header="Last Name" Binding="{Binding Path='LastName'}"/>
+                <DataGridTextColumn Header="Height (ft)" Binding="{Binding Path='Height'}"/>
+                <DataGridTextColumn Header="Weight (kg)" Binding="{Binding Path='Weight'}"/>
+                <DataGridTemplateColumn Header="">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="BtnEdit" Content="Edit" Click="BtnEdit_Click" IsEnabled="True"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="BtnDelete" Content="Delete" Click="BtnDelete_Click" IsEnabled="True"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>
