@@ -1,2 +1,13 @@
-# csharp-sql-crud
-A user-friendly create/retrieve/update/delete application that connects to the SQL server. SQL file needed to create the database is included.
+# How to set up:
+
+1. Create the database. That can be done by executing the create_database.sql file in SQL Server Management Studio. 
+
+2. Open the .sln file located inside the 'app' folder with your preferred IDE (for instance Visual Studio 2019).
+
+3. Replace the connection strings in each App.config file (3 in total).
+
+- connectionString="Data Source=DESKTOP-SDCBG14\SQLEXPRESS.." needs to be replaced with the connection string that is used to connect to your SQL database. 
+
+4. (Optional) Test the connection by running the "UnitTestProject_" and "Hookln" projects.
+
+5. Run the "UI" project.
