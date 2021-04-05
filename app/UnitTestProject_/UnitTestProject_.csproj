@@ -59,9 +59,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ICTPRG403_ICTPRG404_ICTPRG410\ICTPRG403_ICTPRG404_ICTPRG410.csproj">
+    <ProjectReference Include="..\ICTPRG403_ICTPRG404_ICTPRG410\UI.csproj">
       <Project>{E315C5EF-5F27-4B5F-BA21-6F7D2B563E68}</Project>
-      <Name>ICTPRG403_ICTPRG404_ICTPRG410</Name>
+      <Name>UI</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
